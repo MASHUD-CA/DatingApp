@@ -14,6 +14,7 @@ namespace DatingApp.API.Data
         // Values is table name that gets created what we scaffold our database
         // To inform our app about data context Class, make this available as Service [to Startup.cs in ConfiguredServices method]
         public DbSet<Value> Values { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
     }

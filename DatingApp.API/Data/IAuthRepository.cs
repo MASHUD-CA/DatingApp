@@ -1,9 +1,9 @@
-//using System.Threading.Tasks;
-//using DatingApp.API.Models;
+using System.Threading.Tasks;
+using DatingApp.API.Models;
 
 namespace DatingApp.API.Data
 {
-    public interface IAuthReposotory
+    public interface IAuthRepository
     {
          Task<User> Register(User user, string password);
 

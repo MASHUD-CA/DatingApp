@@ -27,5 +27,6 @@ namespace DatingApp.API.Migrations
             migrationBuilder.DropTable(
                 name: "Values");
         }
+
     }
 }

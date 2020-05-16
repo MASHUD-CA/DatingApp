@@ -11,7 +11,6 @@ namespace DatingApp.API.Data
         public AuthRepository(DataContext context)
         {
             _context = context;
-
         }
         public async Task<User> Login(string username, string password)
         {
@@ -52,7 +51,6 @@ namespace DatingApp.API.Data
             await _context.SaveChangesAsync();
 
             return user;
-
         }
 
         private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)

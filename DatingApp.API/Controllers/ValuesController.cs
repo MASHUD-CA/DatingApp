@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DatingApp.API.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace DatingApp.API.Controllers
 {
-    //http:localhost:5000/api/values/5
-    [Route("api/[controller]")]
+    [Authorize] // Everything inside value is authorized
+    [Route("api/[controller]")]  //POST http://localhost:5000/api/values/ 
     [ApiController]
 
     public class ValuesController : ControllerBase

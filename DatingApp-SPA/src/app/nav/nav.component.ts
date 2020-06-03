@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
-import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-nav',

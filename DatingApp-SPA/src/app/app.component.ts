@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-//Configuration Properties
+// Configuration Properties
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
